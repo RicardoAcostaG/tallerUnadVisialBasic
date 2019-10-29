@@ -1,0 +1,13 @@
+C:\Users\Ricardo\source\repos\unad\unad\bin\Debug\unad.exe.config
+C:\Users\Ricardo\source\repos\unad\unad\bin\Debug\unad.exe
+C:\Users\Ricardo\source\repos\unad\unad\bin\Debug\unad.pdb
+C:\Users\Ricardo\source\repos\unad\unad\bin\Debug\unad.xml
+C:\Users\Ricardo\source\repos\unad\unad\obj\Debug\unad.vbprojAssemblyReference.cache
+C:\Users\Ricardo\source\repos\unad\unad\obj\Debug\unad.Resources.resources
+C:\Users\Ricardo\source\repos\unad\unad\obj\Debug\unad.vbproj.GenerateResource.cache
+C:\Users\Ricardo\source\repos\unad\unad\obj\Debug\unad.vbproj.CoreCompileInputs.cache
+C:\Users\Ricardo\source\repos\unad\unad\obj\Debug\unad.exe
+C:\Users\Ricardo\source\repos\unad\unad\obj\Debug\unad.xml
+C:\Users\Ricardo\source\repos\unad\unad\obj\Debug\unad.pdb
+C:\Users\Ricardo\source\repos\unad\unad\obj\Debug\unad.login.resources
+C:\Users\Ricardo\source\repos\unad\unad\obj\Debug\unad.usuarios.resources
