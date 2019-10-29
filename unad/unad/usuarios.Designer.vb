@@ -22,6 +22,7 @@ Partial Class usuarios
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(usuarios))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -42,8 +43,6 @@ Partial Class usuarios
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.GuardarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ModificarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.txtDepartamento = New System.Windows.Forms.TextBox()
-        Me.txtCiudad = New System.Windows.Forms.TextBox()
         Me.txtDireccion = New System.Windows.Forms.TextBox()
         Me.txtApellido = New System.Windows.Forms.TextBox()
         Me.txtNombre = New System.Windows.Forms.TextBox()
@@ -64,6 +63,14 @@ Partial Class usuarios
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.cmbCiudad = New System.Windows.Forms.ComboBox()
+        Me.DbUnadDataSet4 = New unad.dbUnadDataSet4()
+        Me.CiudadesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.CiudadesTableAdapter = New unad.dbUnadDataSet4TableAdapters.CiudadesTableAdapter()
+        Me.cmbDepartamento = New System.Windows.Forms.ComboBox()
+        Me.DbUnadDataSet5 = New unad.dbUnadDataSet5()
+        Me.DepartamentosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DepartamentosTableAdapter = New unad.dbUnadDataSet5TableAdapters.DepartamentosTableAdapter()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.MenuStrip2.SuspendLayout()
@@ -73,6 +80,10 @@ Partial Class usuarios
         Me.MenuStrip1.SuspendLayout()
         Me.Panel5.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DbUnadDataSet4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CiudadesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DbUnadDataSet5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DepartamentosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -160,6 +171,8 @@ Partial Class usuarios
         '
         'Panel4
         '
+        Me.Panel4.Controls.Add(Me.cmbDepartamento)
+        Me.Panel4.Controls.Add(Me.cmbCiudad)
         Me.Panel4.Controls.Add(Me.txtUsuario)
         Me.Panel4.Controls.Add(Me.txtContraseña)
         Me.Panel4.Controls.Add(Me.txtLugarNacimiento)
@@ -167,8 +180,6 @@ Partial Class usuarios
         Me.Panel4.Controls.Add(Me.txtFechaNacimiento)
         Me.Panel4.Controls.Add(Me.txtTelefono)
         Me.Panel4.Controls.Add(Me.MenuStrip1)
-        Me.Panel4.Controls.Add(Me.txtDepartamento)
-        Me.Panel4.Controls.Add(Me.txtCiudad)
         Me.Panel4.Controls.Add(Me.txtDireccion)
         Me.Panel4.Controls.Add(Me.txtApellido)
         Me.Panel4.Controls.Add(Me.txtNombre)
@@ -279,22 +290,6 @@ Partial Class usuarios
         Me.ModificarToolStripMenuItem.Name = "ModificarToolStripMenuItem"
         Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(96, 25)
         Me.ModificarToolStripMenuItem.Text = "Modificar"
-        '
-        'txtDepartamento
-        '
-        Me.txtDepartamento.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDepartamento.Location = New System.Drawing.Point(176, 218)
-        Me.txtDepartamento.Name = "txtDepartamento"
-        Me.txtDepartamento.Size = New System.Drawing.Size(334, 23)
-        Me.txtDepartamento.TabIndex = 1
-        '
-        'txtCiudad
-        '
-        Me.txtCiudad.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCiudad.Location = New System.Drawing.Point(176, 183)
-        Me.txtCiudad.Name = "txtCiudad"
-        Me.txtCiudad.Size = New System.Drawing.Size(334, 23)
-        Me.txtCiudad.TabIndex = 1
         '
         'txtDireccion
         '
@@ -486,6 +481,58 @@ Partial Class usuarios
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
+        'cmbCiudad
+        '
+        Me.cmbCiudad.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.CiudadesBindingSource, "NombreCiudad", True))
+        Me.cmbCiudad.DataSource = Me.CiudadesBindingSource
+        Me.cmbCiudad.DisplayMember = "NombreCiudad"
+        Me.cmbCiudad.FormattingEnabled = True
+        Me.cmbCiudad.Location = New System.Drawing.Point(176, 186)
+        Me.cmbCiudad.Name = "cmbCiudad"
+        Me.cmbCiudad.Size = New System.Drawing.Size(334, 21)
+        Me.cmbCiudad.TabIndex = 6
+        Me.cmbCiudad.ValueMember = "IdCiudad"
+        '
+        'DbUnadDataSet4
+        '
+        Me.DbUnadDataSet4.DataSetName = "dbUnadDataSet4"
+        Me.DbUnadDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'CiudadesBindingSource
+        '
+        Me.CiudadesBindingSource.DataMember = "Ciudades"
+        Me.CiudadesBindingSource.DataSource = Me.DbUnadDataSet4
+        '
+        'CiudadesTableAdapter
+        '
+        Me.CiudadesTableAdapter.ClearBeforeFill = True
+        '
+        'cmbDepartamento
+        '
+        Me.cmbDepartamento.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.DepartamentosBindingSource, "NombreDepartamentos", True))
+        Me.cmbDepartamento.DataSource = Me.DepartamentosBindingSource
+        Me.cmbDepartamento.DisplayMember = "NombreDepartamentos"
+        Me.cmbDepartamento.FormattingEnabled = True
+        Me.cmbDepartamento.Location = New System.Drawing.Point(176, 220)
+        Me.cmbDepartamento.Name = "cmbDepartamento"
+        Me.cmbDepartamento.Size = New System.Drawing.Size(334, 21)
+        Me.cmbDepartamento.TabIndex = 7
+        Me.cmbDepartamento.ValueMember = "IdDepartamentos"
+        '
+        'DbUnadDataSet5
+        '
+        Me.DbUnadDataSet5.DataSetName = "dbUnadDataSet5"
+        Me.DbUnadDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'DepartamentosBindingSource
+        '
+        Me.DepartamentosBindingSource.DataMember = "Departamentos"
+        Me.DepartamentosBindingSource.DataSource = Me.DbUnadDataSet5
+        '
+        'DepartamentosTableAdapter
+        '
+        Me.DepartamentosTableAdapter.ClearBeforeFill = True
+        '
         'usuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -518,6 +565,10 @@ Partial Class usuarios
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DbUnadDataSet4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CiudadesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DbUnadDataSet5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DepartamentosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -561,6 +612,12 @@ Partial Class usuarios
     Friend WithEvents Label15 As Label
     Friend WithEvents Label14 As Label
     Friend WithEvents Label13 As Label
-    Friend WithEvents txtDepartamento As TextBox
-    Friend WithEvents txtCiudad As TextBox
+    Friend WithEvents cmbCiudad As ComboBox
+    Friend WithEvents DbUnadDataSet4 As dbUnadDataSet4
+    Friend WithEvents CiudadesBindingSource As BindingSource
+    Friend WithEvents CiudadesTableAdapter As dbUnadDataSet4TableAdapters.CiudadesTableAdapter
+    Friend WithEvents cmbDepartamento As ComboBox
+    Friend WithEvents DbUnadDataSet5 As dbUnadDataSet5
+    Friend WithEvents DepartamentosBindingSource As BindingSource
+    Friend WithEvents DepartamentosTableAdapter As dbUnadDataSet5TableAdapters.DepartamentosTableAdapter
 End Class

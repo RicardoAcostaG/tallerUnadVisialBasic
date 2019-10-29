@@ -84,6 +84,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dbUnadDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="dbUnadDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbUnadDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbUnadDataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbUnadDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbUnadDataSet4.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbUnadDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbUnadDataSet5.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbUnadDataSet5.xsd</DependentUpon>
+    </Compile>
     <Compile Include="login.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +169,50 @@
     </None>
     <None Include="dbUnadDataSet1.xss">
       <DependentUpon>dbUnadDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="dbUnadDataSet2.xsc">
+      <DependentUpon>dbUnadDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="dbUnadDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbUnadDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbUnadDataSet2.xss">
+      <DependentUpon>dbUnadDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="dbUnadDataSet3.xsc">
+      <DependentUpon>dbUnadDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="dbUnadDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbUnadDataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbUnadDataSet3.xss">
+      <DependentUpon>dbUnadDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="dbUnadDataSet4.xsc">
+      <DependentUpon>dbUnadDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="dbUnadDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbUnadDataSet4.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbUnadDataSet4.xss">
+      <DependentUpon>dbUnadDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="dbUnadDataSet5.xsc">
+      <DependentUpon>dbUnadDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="dbUnadDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbUnadDataSet5.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbUnadDataSet5.xss">
+      <DependentUpon>dbUnadDataSet5.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
