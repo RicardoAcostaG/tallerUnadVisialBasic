@@ -11,3 +11,16 @@ C:\Users\Ricardo\source\repos\unad\unad\obj\Debug\unad.xml
 C:\Users\Ricardo\source\repos\unad\unad\obj\Debug\unad.pdb
 C:\Users\Ricardo\source\repos\unad\unad\obj\Debug\unad.login.resources
 C:\Users\Ricardo\source\repos\unad\unad\obj\Debug\unad.usuarios.resources
+E:\UNAD\SEMESTRE 9\VISUAL BASIC\PASO 3\tallerUnadVisialBasic\unad\unad\bin\Debug\unad.exe.config
+E:\UNAD\SEMESTRE 9\VISUAL BASIC\PASO 3\tallerUnadVisialBasic\unad\unad\bin\Debug\unad.exe
+E:\UNAD\SEMESTRE 9\VISUAL BASIC\PASO 3\tallerUnadVisialBasic\unad\unad\bin\Debug\unad.pdb
+E:\UNAD\SEMESTRE 9\VISUAL BASIC\PASO 3\tallerUnadVisialBasic\unad\unad\bin\Debug\unad.xml
+E:\UNAD\SEMESTRE 9\VISUAL BASIC\PASO 3\tallerUnadVisialBasic\unad\unad\obj\Debug\unad.vbprojAssemblyReference.cache
+E:\UNAD\SEMESTRE 9\VISUAL BASIC\PASO 3\tallerUnadVisialBasic\unad\unad\obj\Debug\unad.login.resources
+E:\UNAD\SEMESTRE 9\VISUAL BASIC\PASO 3\tallerUnadVisialBasic\unad\unad\obj\Debug\unad.Resources.resources
+E:\UNAD\SEMESTRE 9\VISUAL BASIC\PASO 3\tallerUnadVisialBasic\unad\unad\obj\Debug\unad.usuarios.resources
+E:\UNAD\SEMESTRE 9\VISUAL BASIC\PASO 3\tallerUnadVisialBasic\unad\unad\obj\Debug\unad.vbproj.GenerateResource.cache
+E:\UNAD\SEMESTRE 9\VISUAL BASIC\PASO 3\tallerUnadVisialBasic\unad\unad\obj\Debug\unad.vbproj.CoreCompileInputs.cache
+E:\UNAD\SEMESTRE 9\VISUAL BASIC\PASO 3\tallerUnadVisialBasic\unad\unad\obj\Debug\unad.exe
+E:\UNAD\SEMESTRE 9\VISUAL BASIC\PASO 3\tallerUnadVisialBasic\unad\unad\obj\Debug\unad.xml
+E:\UNAD\SEMESTRE 9\VISUAL BASIC\PASO 3\tallerUnadVisialBasic\unad\unad\obj\Debug\unad.pdb

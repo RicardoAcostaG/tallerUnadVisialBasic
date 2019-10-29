@@ -79,4 +79,8 @@ Public Class usuarios
         Panel4.Visible = False
         Mostrar()
     End Sub
+
+    Private Sub Label11_MouseClick(sender As Object, e As MouseEventArgs) Handles Label11.MouseClick
+        Dispose()
+    End Sub
 End Class
