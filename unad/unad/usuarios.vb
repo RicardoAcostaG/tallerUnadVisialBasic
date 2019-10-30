@@ -21,18 +21,18 @@ Public Class usuarios
             cmd.CommandType = 4
 
             'pasar los datos de la vista de asuario por parametros a la base de datos'
-            cmd.Parameters.AddWithValue("@numeroIdentificacin", txtNumeroIdentificacion)
-            cmd.Parameters.AddWithValue("@tipoDocumento", txtTipoDucumento)
-            cmd.Parameters.AddWithValue("@nombre", txtNombre)
-            cmd.Parameters.AddWithValue("@apellido", txtApellido)
-            cmd.Parameters.AddWithValue("@direccion", txtDireccion)
-            cmd.Parameters.AddWithValue("@IdCiudad", txtCiudad)
-            cmd.Parameters.AddWithValue("@IdDepartamentos", txtDepartamento)
-            cmd.Parameters.AddWithValue("@telefono", txtTelefono)
-            cmd.Parameters.AddWithValue("@fechaNacimiento", txtFechaNacimiento)
-            cmd.Parameters.AddWithValue("@lugarNacimiento", txtLugarNacimiento)
-            cmd.Parameters.AddWithValue("@usuario", txtUsuario)
-            cmd.Parameters.AddWithValue("@contraseña", txtContraseña)
+            cmd.Parameters.AddWithValue("@numeroIdentificacin", txtNumeroIdentificacion.Text)
+            cmd.Parameters.AddWithValue("@tipoDocumento", txtTipoDucumento.Text)
+            cmd.Parameters.AddWithValue("@nombre", txtNombre.Text)
+            cmd.Parameters.AddWithValue("@apellido", txtApellido.Text)
+            cmd.Parameters.AddWithValue("@direccion", txtDireccion.Text)
+            cmd.Parameters.AddWithValue("@IdCiudad", cmbCiudad.SelectedValue)
+            cmd.Parameters.AddWithValue("@IdDepartamentos", cmbDepartamento.SelectedValue)
+            cmd.Parameters.AddWithValue("@telefono", txtTelefono.Text)
+            cmd.Parameters.AddWithValue("@fechaNacimiento", txtFechaNacimiento.Text)
+            cmd.Parameters.AddWithValue("@lugarNacimiento", txtLugarNacimiento.Text)
+            cmd.Parameters.AddWithValue("@usuario", txtUsuario.Text)
+            cmd.Parameters.AddWithValue("@contraseña", txtContraseña.Text)
 
             cmd.ExecuteNonQuery()
             cerrar()
@@ -43,7 +43,6 @@ Public Class usuarios
         Catch ex As Exception : MsgBox(ex.Message)
 
         End Try
-
 
     End Sub
 
@@ -76,8 +75,15 @@ Public Class usuarios
     End Sub
 
     Private Sub usuarios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         Panel4.Visible = False
         Mostrar()
+
+        'TODO: esta línea de código carga datos en la tabla 'DbUnadDataSet5.Departamentos' Puede moverla o quitarla según sea necesario.
+        Me.DepartamentosTableAdapter.Fill(Me.DbUnadDataSet5.Departamentos)
+        'TODO: esta línea de código carga datos en la tabla 'DbUnadDataSet4.Ciudades' Puede moverla o quitarla según sea necesario.
+        Me.CiudadesTableAdapter.Fill(Me.DbUnadDataSet4.Ciudades)
+
     End Sub
 
     Private Sub Label11_MouseClick(sender As Object, e As MouseEventArgs) Handles Label11.MouseClick
