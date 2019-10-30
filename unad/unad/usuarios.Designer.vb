@@ -64,6 +64,7 @@ Partial Class usuarios
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.MenuStrip2.SuspendLayout()
@@ -78,6 +79,7 @@ Partial Class usuarios
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Controls.Add(Me.Label11)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -100,7 +102,7 @@ Partial Class usuarios
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Comic Sans MS", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 18)
+        Me.Label1.Location = New System.Drawing.Point(72, 19)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(284, 29)
         Me.Label1.TabIndex = 0
@@ -140,7 +142,7 @@ Partial Class usuarios
         Me.ToolStripMenuItem2.BackColor = System.Drawing.Color.Transparent
         Me.ToolStripMenuItem2.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ToolStripMenuItem2.ForeColor = System.Drawing.Color.White
-        Me.ToolStripMenuItem2.Image = CType(resources.GetObject("ToolStripMenuItem2.Image"), System.Drawing.Image)
+        Me.ToolStripMenuItem2.Image = Global.unad.My.Resources.Resources.lupa
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
         Me.ToolStripMenuItem2.Size = New System.Drawing.Size(28, 20)
         '
@@ -155,7 +157,7 @@ Partial Class usuarios
         Me.dataListado.Location = New System.Drawing.Point(0, 122)
         Me.dataListado.Name = "dataListado"
         Me.dataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dataListado.Size = New System.Drawing.Size(780, 541)
+        Me.dataListado.Size = New System.Drawing.Size(685, 541)
         Me.dataListado.TabIndex = 2
         '
         'Panel4
@@ -186,9 +188,9 @@ Partial Class usuarios
         Me.Panel4.Controls.Add(Me.Label4)
         Me.Panel4.Controls.Add(Me.Label3)
         Me.Panel4.Controls.Add(Me.Label2)
-        Me.Panel4.Location = New System.Drawing.Point(142, 147)
+        Me.Panel4.Location = New System.Drawing.Point(68, 128)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(599, 485)
+        Me.Panel4.Size = New System.Drawing.Size(599, 477)
         Me.Panel4.TabIndex = 3
         Me.Panel4.Visible = False
         '
@@ -258,7 +260,7 @@ Partial Class usuarios
         '
         Me.MenuStrip1.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GuardarToolStripMenuItem, Me.ModificarToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 456)
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 448)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(599, 29)
         Me.MenuStrip1.TabIndex = 5
@@ -268,16 +270,22 @@ Partial Class usuarios
         '
         Me.GuardarToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.GuardarToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.GuardarToolStripMenuItem.Image = Global.unad.My.Resources.Resources.flexible
+        Me.GuardarToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.GuardarToolStripMenuItem.Name = "GuardarToolStripMenuItem"
-        Me.GuardarToolStripMenuItem.Size = New System.Drawing.Size(83, 25)
-        Me.GuardarToolStripMenuItem.Text = "Guardar"
+        Me.GuardarToolStripMenuItem.Size = New System.Drawing.Size(103, 25)
+        Me.GuardarToolStripMenuItem.Text = "   Guardar  "
+        Me.GuardarToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.GuardarToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay
         '
         'ModificarToolStripMenuItem
         '
-        Me.ModificarToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.ModificarToolStripMenuItem.BackColor = System.Drawing.Color.Silver
         Me.ModificarToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.ModificarToolStripMenuItem.Image = Global.unad.My.Resources.Resources.editar
+        Me.ModificarToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.ModificarToolStripMenuItem.Name = "ModificarToolStripMenuItem"
-        Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(96, 25)
+        Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(112, 25)
         Me.ModificarToolStripMenuItem.Text = "Modificar"
         '
         'txtDepartamento
@@ -461,16 +469,16 @@ Partial Class usuarios
         Me.Panel5.Controls.Add(Me.Label12)
         Me.Panel5.Controls.Add(Me.PictureBox1)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel5.Location = New System.Drawing.Point(780, 122)
+        Me.Panel5.Location = New System.Drawing.Point(685, 122)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(176, 541)
+        Me.Panel5.Size = New System.Drawing.Size(271, 541)
         Me.Panel5.TabIndex = 4
         '
         'Label12
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Comic Sans MS", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(7, 25)
+        Me.Label12.Location = New System.Drawing.Point(54, 28)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(163, 19)
         Me.Label12.TabIndex = 1
@@ -478,13 +486,23 @@ Partial Class usuarios
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(49, 47)
+        Me.PictureBox1.ErrorImage = Nothing
+        Me.PictureBox1.Image = Global.unad.My.Resources.Resources.agregar_usuario
+        Me.PictureBox1.InitialImage = Nothing
+        Me.PictureBox1.Location = New System.Drawing.Point(96, 50)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(82, 81)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
+        '
+        'Panel2
+        '
+        Me.Panel2.BackgroundImage = Global.unad.My.Resources.Resources.usuarios
+        Me.Panel2.Location = New System.Drawing.Point(12, 9)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(45, 49)
+        Me.Panel2.TabIndex = 4
         '
         'usuarios
         '
@@ -563,4 +581,5 @@ Partial Class usuarios
     Friend WithEvents Label13 As Label
     Friend WithEvents txtDepartamento As TextBox
     Friend WithEvents txtCiudad As TextBox
+    Friend WithEvents Panel2 As Panel
 End Class
